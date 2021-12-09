@@ -1,0 +1,6 @@
+.storybook
+.next
+node_modules
+Dockerfile
+helm
+.github
