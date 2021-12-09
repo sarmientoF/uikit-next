@@ -1,5 +1,5 @@
 import React, { AnchorHTMLAttributes } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { classNames } from '../..'
 
 export type AnchorProps = {
@@ -17,30 +17,14 @@ const AnchorComponent: React.FC<
   children,
   ...props
 }) => {
-  let anchor: any = null
-
   let baseClassName =
     'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500'
 
-  if (to) {
-    anchor = (
-      <Link className={classNames(className, baseClassName)} to={to} {...props}>
-        {children}
-      </Link>
-    )
-  }
-  if (href) {
-    anchor = (
-      <a
-        className={classNames(className, baseClassName)}
-        href={href}
-        {...props}
-      >
-        {children}
-      </a>
-    )
-  }
-  return anchor
+    return <Link href={to ?? href ?? ""} {...props}>
+    <a className={classNames(className, baseClassName)} >
+    {children}
+    </a>
+  </Link>
 }
 
 export const Anchor = Object.assign(AnchorComponent, {})

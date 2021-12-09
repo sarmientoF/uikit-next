@@ -2,6 +2,18 @@
   "name": "@sergeimeza/uikit-next",
   "version": "1.0.0",
   "private": false,
+  "description": "Personal react components library",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "typings": "lib/esm/index.d.ts",
+  "repository": "https://github.com/SergeiMeza/uikit-next.git",
+  "author": "SergeiMeza <sergeimeza@gmail.com>",
+  "license": "MIT",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": false
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,13 +21,15 @@
     "lint": "next lint",
     "build:clean": "rimraf lib",
     "build:css": "postcss styles/index.css -o components/styles.css",
-    "build:copy-css": "cp components/styles.css lib/styles.css",
-    "compile": "yarn build:clean && tsc --project tsconfig.compile.json",
+    "build:copy-css": "cp components/styles.css lib/esm/styles.css && cp components/styles.css lib/cjs/styles.css",
+    "build:esm": "tsc --project tsconfig.compile.json",
+    "build:cjs": "tsc --project tsconfig.compile.json --module commonjs --outDir lib/cjs",
+    "compile": "yarn build:clean && yarn build:esm && yarn build:cjs",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
-    "@sergeimeza/foundation-react": "^1.0.1",
+    "@sergeimeza/foundation-react": "^1.2.0",
     "@tailwindcss/typography": "^0.4.1",
     "react-syntax-highlighter": "^15.4.5"
   },
@@ -23,11 +37,11 @@
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "@hookform/resolvers": "^2.8.0",
+    "next": "12.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.15.3",
-    "yup": "^0.32.9",
-    "next": "12.0.7"
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@headlessui/react": "^1.4.1",
@@ -41,14 +55,13 @@
     "@storybook/react": "^6.3.8",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
-    "@types/jest": "^26.0.15",
     "@types/node": "16.11.12",
     "@types/react": "17.0.37",
     "@types/react-syntax-highlighter": "^13.5.2",
-    "next": "12.0.7",
     "autoprefixer": "^10.4.0",
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
+    "next": "12.0.7",
     "postcss": "^8.4.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -85,16 +98,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "semi": false
-  },
-  "description": "Personal react components library",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "repository": "https://github.com/SergeiMeza/uikit-react.git",
-  "author": "SergeiMeza <sergeimeza@gmail.com>",
-  "license": "MIT"
+  }
 }

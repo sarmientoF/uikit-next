@@ -10,7 +10,9 @@ const DropdownPreview = () => {
         current: true,
       }}
     >
-      <Dropdown />
+      <div className="flex justify-end">
+        <Dropdown />
+      </div>
     </ComponentWrapper>
   )
 }
