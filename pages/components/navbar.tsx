@@ -204,7 +204,7 @@ const NavBarPreview = () => {
     <ComponentWrapper
       component={{
         name: 'NavBar',
-        to: '/components/nav-bar',
+        to: '/components/navbar',
         current: true,
       }}
     >

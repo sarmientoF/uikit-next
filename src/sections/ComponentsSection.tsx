@@ -105,7 +105,7 @@ const components = [
   {
     name: 'NavBar',
     initials: 'NB',
-    to: '/components/nav-bar',
+    to: '/components/navbar',
   },
   {
     name: 'Navigation',
@@ -150,7 +150,7 @@ const components = [
   {
     name: 'SlideOver',
     initials: 'SO',
-    to: '/components/slide-over',
+    to: '/components/slideover',
   },
   {
     name: 'StepsNavigation',

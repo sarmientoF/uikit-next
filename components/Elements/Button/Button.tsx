@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import React, { ButtonHTMLAttributes } from 'react'
 
 import { classNames } from '../../helpers/methods'
@@ -69,14 +69,15 @@ const InlineButton: React.FC<InlineButtonProps> = ({
     )
   } else if (to) {
     button = (
-      <Link
-        to={to}
-        className={classNames(
-          className,
-          'font-medium text-primary-600 hover:text-primary-500',
-        )}
-      >
-        {children ?? title}
+      <Link href={to ?? href ?? ''}>
+        <a
+          className={classNames(
+            className,
+            'font-medium text-primary-600 hover:text-primary-500',
+          )}
+        >
+          {children ?? title}
+        </a>
       </Link>
     )
   }

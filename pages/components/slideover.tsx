@@ -9,7 +9,7 @@ const SlideOverPreview = () => {
     <ComponentWrapper
       component={{
         name: 'SlideOver',
-        to: '/components/slide-over',
+        to: '/components/slideover',
         current: true,
       }}
     >

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
+import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
 import * as yup from 'yup'
 
 import { Button, Divider, Input } from '../../../components'
@@ -25,7 +25,9 @@ export const SignInLayout: React.FC<any> = ({}) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<SignInFormData>({ resolver: yupResolver(signInFormSchema) })
+  } = useForm<SignInFormData>({
+    resolver: yupResolver(signInFormSchema),
+  })
 
   const onSubmit = (data: any) => setPayload(data)
 
