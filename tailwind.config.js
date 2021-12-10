@@ -1,8 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-
 let colors = require('tailwindcss/colors')
-
-delete colors.lightBlue
 
 module.exports = {
   content: [
