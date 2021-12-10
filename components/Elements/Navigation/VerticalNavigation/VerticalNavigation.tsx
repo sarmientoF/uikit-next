@@ -78,7 +78,12 @@ const VerticalNavigationComponent: React.FC<VerticalNavigationProps> = ({
               ) : null}
             </Anchor>
           ) : (
-            <Disclosure as="div" key={item.name} className="space-y-1">
+            <Disclosure
+              as="div"
+              key={item.name}
+              defaultOpen={item.current}
+              className="space-y-1"
+            >
               {({ open }) => (
                 <>
                   <Disclosure.Button
