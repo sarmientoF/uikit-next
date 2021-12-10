@@ -54,7 +54,7 @@ const VerticalNavigationComponent: React.FC<VerticalNavigationProps> = ({
                     item.current
                       ? 'text-primary-500'
                       : 'text-gray-400 group-hover:text-gray-500',
-                    'flex-shrink-0 -ml-1 mr-3 h-6 w-6',
+                    'shrink-0 -ml-1 mr-3 h-6 w-6',
                   )}
                   aria-hidden="true"
                 />
@@ -88,7 +88,7 @@ const VerticalNavigationComponent: React.FC<VerticalNavigationProps> = ({
                     <svg
                       className={classNames(
                         open ? 'text-gray-400 rotate-90' : 'text-gray-300',
-                        'mr-2 flex-shrink-0 h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150',
+                        'mr-2 shrink-0 h-5 w-5 group-hover:text-gray-400 transition-colors ease-in-out duration-150',
                       )}
                       viewBox="0 0 20 20"
                       aria-hidden="true"

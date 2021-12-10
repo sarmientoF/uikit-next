@@ -89,7 +89,7 @@ export const DarkSidebarLightHeader = () => {
                   </button>
                 </div>
               </Transition.Child>
-              <div className="flex-shrink-0 flex items-center px-4">
+              <div className="shrink-0 flex items-center px-4">
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
@@ -114,7 +114,7 @@ export const DarkSidebarLightHeader = () => {
                           item.current
                             ? 'text-gray-300'
                             : 'text-gray-400 group-hover:text-gray-300',
-                          'mr-4 flex-shrink-0 h-6 w-6',
+                          'mr-4 shrink-0 h-6 w-6',
                         )}
                         aria-hidden="true"
                       />
@@ -123,8 +123,8 @@ export const DarkSidebarLightHeader = () => {
                   ))}
                 </nav>
               </div>
-              <div className="flex-shrink-0 flex bg-gray-700 p-4">
-                <a href="#" className="flex-shrink-0 group block">
+              <div className="shrink-0 flex bg-gray-700 p-4">
+                <a href="#" className="shrink-0 group block">
                   <div className="flex items-center">
                     <div>
                       <img
@@ -146,18 +146,18 @@ export const DarkSidebarLightHeader = () => {
               </div>
             </div>
           </Transition.Child>
-          <div className="flex-shrink-0 w-14" aria-hidden="true">
+          <div className="shrink-0 w-14" aria-hidden="true">
             {/* Dummy element to force sidebar to shrink to fit close icon */}
           </div>
         </Dialog>
       </Transition.Root>
 
       {/* Static sidebar for desktop */}
-      <div className="hidden md:flex md:flex-shrink-0">
+      <div className="hidden md:flex md:shrink-0">
         <div className="flex flex-col w-64">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex-1 flex flex-col min-h-0">
-            <div className="flex items-center h-16 flex-shrink-0 px-4 bg-gray-900">
+            <div className="flex items-center h-16 shrink-0 px-4 bg-gray-900">
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
@@ -182,7 +182,7 @@ export const DarkSidebarLightHeader = () => {
                         item.current
                           ? 'text-gray-300'
                           : 'text-gray-400 group-hover:text-gray-300',
-                        'mr-3 flex-shrink-0 h-6 w-6',
+                        'mr-3 shrink-0 h-6 w-6',
                       )}
                       aria-hidden="true"
                     />
@@ -195,7 +195,7 @@ export const DarkSidebarLightHeader = () => {
         </div>
       </div>
       <div className="flex flex-col w-0 flex-1 overflow-hidden">
-        <div className="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
+        <div className="relative z-10 shrink-0 flex h-16 bg-white shadow">
           <button
             className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
             type="button"
@@ -249,11 +249,11 @@ export const DarkSidebarLightHeader = () => {
                 <Transition
                   as={Fragment}
                   enter="transition ease-out duration-200"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
                   leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
                 >
                   <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                     {userNavigation.map((item) => (

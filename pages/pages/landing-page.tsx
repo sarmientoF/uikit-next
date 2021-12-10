@@ -99,7 +99,7 @@ const LandingPage = () => {
                 </form>
                 <div className="mt-6">
                   <div className="inline-flex items-center divide-x divide-gray-300">
-                    <div className="flex-shrink-0 flex pr-5">
+                    <div className="shrink-0 flex pr-5">
                       <StarIcon
                         className="h-5 w-5 text-yellow-400"
                         aria-hidden="true"

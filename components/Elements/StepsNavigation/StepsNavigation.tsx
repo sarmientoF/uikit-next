@@ -93,7 +93,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                   className="group flex items-center w-full"
                 >
                   <span className="px-6 py-4 flex items-center text-sm font-medium">
-                    <span className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-600 rounded-full group-hover:bg-primary-800">
+                    <span className="shrink-0 w-10 h-10 flex items-center justify-center bg-primary-600 rounded-full group-hover:bg-primary-800">
                       <CheckIcon
                         className="w-6 h-6 text-white"
                         aria-hidden="true"
@@ -111,7 +111,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                   className="px-6 py-4 flex items-center text-sm font-medium"
                   aria-current="step"
                 >
-                  <span className="flex-shrink-0 w-10 h-10 flex items-center justify-center border-2 border-primary-600 rounded-full">
+                  <span className="shrink-0 w-10 h-10 flex items-center justify-center border-2 border-primary-600 rounded-full">
                     <span className="text-primary-600">{step.id}</span>
                   </span>
                   <span className="ml-4 text-sm font-medium text-primary-600">
@@ -125,7 +125,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                   className="group flex items-center"
                 >
                   <span className="px-6 py-4 flex items-center text-sm font-medium">
-                    <span className="flex-shrink-0 w-10 h-10 flex items-center justify-center border-2 border-gray-300 rounded-full group-hover:border-gray-400">
+                    <span className="shrink-0 w-10 h-10 flex items-center justify-center border-2 border-gray-300 rounded-full group-hover:border-gray-400">
                       <span className="text-gray-500 group-hover:text-gray-900">
                         {step.id}
                       </span>
@@ -257,7 +257,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                           'px-6 py-5 flex items-start text-sm font-medium',
                         )}
                       >
-                        <span className="flex-shrink-0">
+                        <span className="shrink-0">
                           <span className="w-10 h-10 flex items-center justify-center bg-primary-600 rounded-full">
                             <CheckIcon
                               className="w-6 h-6 text-white"
@@ -287,7 +287,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                           'px-6 py-5 flex items-start text-sm font-medium',
                         )}
                       >
-                        <span className="flex-shrink-0">
+                        <span className="shrink-0">
                           <span className="w-10 h-10 flex items-center justify-center border-2 border-primary-600 rounded-full">
                             <span className="text-primary-600">{step.id}</span>
                           </span>
@@ -314,7 +314,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                           'px-6 py-5 flex items-start text-sm font-medium',
                         )}
                       >
-                        <span className="flex-shrink-0">
+                        <span className="shrink-0">
                           <span className="w-10 h-10 flex items-center justify-center border-2 border-gray-300 rounded-full">
                             <span className="text-gray-500">{step.id}</span>
                           </span>
@@ -453,7 +453,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                 {step.status === StepNavigationStatus.complete ? (
                   <Anchor href={step.href} to={step.to} className="group">
                     <span className="flex items-start">
-                      <span className="flex-shrink-0 relative h-5 w-5 flex items-center justify-center">
+                      <span className="shrink-0 relative h-5 w-5 flex items-center justify-center">
                         <CheckCircleIcon
                           className="h-full w-full text-primary-600 group-hover:text-primary-800"
                           aria-hidden="true"
@@ -472,7 +472,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                     aria-current="step"
                   >
                     <span
-                      className="flex-shrink-0 h-5 w-5 relative flex items-center justify-center"
+                      className="shrink-0 h-5 w-5 relative flex items-center justify-center"
                       aria-hidden="true"
                     >
                       <span className="absolute h-4 w-4 rounded-full bg-primary-200" />
@@ -486,7 +486,7 @@ const StepsNavigationComponent: React.FC<StepsNavigationProps> = ({
                   <Anchor href={step.href} to={step.to} className="group">
                     <div className="flex items-start">
                       <div
-                        className="flex-shrink-0 h-5 w-5 relative flex items-center justify-center"
+                        className="shrink-0 h-5 w-5 relative flex items-center justify-center"
                         aria-hidden="true"
                       >
                         <div className="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-gray-400" />

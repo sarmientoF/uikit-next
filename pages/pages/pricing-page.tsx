@@ -628,7 +628,7 @@ export const PricingPage = () => {
           >
             <Popover.Panel
               focus
-              className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="absolute z-10 top-0 inset-x-0 p-2 transition origin-top-right md:hidden"
             >
               <div className="rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div className="pt-5 px-5">
@@ -1033,7 +1033,7 @@ export const PricingPage = () => {
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
               <img
-                className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                className="translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
                 alt="App screenshot"
               />
@@ -1141,7 +1141,7 @@ export const PricingPage = () => {
                 className="min-w-0 w-full bg-white shadow-sm py-2 px-4 placeholder-gray-500 focus:outline-none focus:ring-orange-500 focus:border-orange-500 border-gray-300 rounded-md"
                 placeholder="Enter your email"
               />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:shrink-0">
                 <button
                   type="submit"
                   className="w-full bg-orange-100 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-red-600 hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"

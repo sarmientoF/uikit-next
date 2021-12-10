@@ -185,7 +185,7 @@ export const ComponentsSection = () => {
             <div
               className={classNames(
                 component.bgColor,
-                'py-4 flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
+                'py-4 shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
               )}
             >
               {component.initials}

@@ -33,7 +33,7 @@ export const TwoRowNavOverlap = () => {
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <div className="relative py-5 flex items-center justify-center lg:justify-between">
                 {/* Logo */}
-                <div className="absolute left-0 flex-shrink-0 lg:static">
+                <div className="absolute left-0 shrink-0 lg:static">
                   <a href="#">
                     <span className="sr-only">Workflow</span>
                     <img
@@ -48,14 +48,14 @@ export const TwoRowNavOverlap = () => {
                 <div className="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
                   <button
                     type="button"
-                    className="flex-shrink-0 p-1 text-indigo-200 rounded-full hover:text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white"
+                    className="shrink-0 p-1 text-indigo-200 rounded-full hover:text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white"
                   >
                     <span className="sr-only">View notifications</span>
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
 
                   {/* Profile dropdown */}
-                  <Menu as="div" className="ml-4 relative flex-shrink-0">
+                  <Menu as="div" className="ml-4 relative shrink-0">
                     <div>
                       <Menu.Button className="bg-white rounded-full flex text-sm ring-2 ring-white ring-opacity-20 focus:outline-none focus:ring-opacity-100">
                         <span className="sr-only">Open user menu</span>
@@ -69,11 +69,11 @@ export const TwoRowNavOverlap = () => {
                     <Transition
                       as={Fragment}
                       enter="transition ease-out duration-200"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
+                      enterFrom="opacity-0 scale-95"
+                      enterTo="opacity-100 scale-100"
                       leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
+                      leaveFrom="opacity-100 scale-100"
+                      leaveTo="opacity-0 scale-95"
                     >
                       <Menu.Items className="origin-top-right z-40 absolute -right-2 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                         {userNavigation.map((item) => (
@@ -118,7 +118,7 @@ export const TwoRowNavOverlap = () => {
                 </div>
 
                 {/* Menu button */}
-                <div className="absolute right-0 flex-shrink-0 lg:hidden">
+                <div className="absolute right-0 shrink-0 lg:hidden">
                   {/* Mobile menu button */}
                   <Popover.Button className="bg-transparent p-2 rounded-md inline-flex items-center justify-center text-indigo-200 hover:text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -198,7 +198,7 @@ export const TwoRowNavOverlap = () => {
                 >
                   <Popover.Panel
                     focus
-                    className="z-30 absolute top-0 inset-x-0 max-w-3xl mx-auto w-full p-2 transition transform origin-top"
+                    className="z-30 absolute top-0 inset-x-0 max-w-3xl mx-auto w-full p-2 transition origin-top"
                   >
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y divide-gray-200">
                       <div className="pt-3 pb-2">
@@ -252,7 +252,7 @@ export const TwoRowNavOverlap = () => {
                       </div>
                       <div className="pt-4 pb-2">
                         <div className="flex items-center px-5">
-                          <div className="flex-shrink-0">
+                          <div className="shrink-0">
                             <img
                               className="h-10 w-10 rounded-full"
                               src={user.imageUrl}
@@ -269,7 +269,7 @@ export const TwoRowNavOverlap = () => {
                           </div>
                           <button
                             type="button"
-                            className="ml-auto flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="ml-auto shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                           >
                             <span className="sr-only">View notifications</span>
                             <BellIcon className="h-6 w-6" aria-hidden="true" />

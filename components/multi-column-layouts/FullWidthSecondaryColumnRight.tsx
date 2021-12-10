@@ -74,7 +74,7 @@ export const FullWidthSecondaryColumnRight = () => {
                 </div>
               </Transition.Child>
               <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
-                <div className="flex-shrink-0 flex items-center px-4">
+                <div className="shrink-0 flex items-center px-4">
                   <img
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-900-text.svg"
@@ -109,8 +109,8 @@ export const FullWidthSecondaryColumnRight = () => {
                   </div>
                 </nav>
               </div>
-              <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-                <a href="#" className="flex-shrink-0 group block">
+              <div className="shrink-0 flex border-t border-gray-200 p-4">
+                <a href="#" className="shrink-0 group block">
                   <div className="flex items-center">
                     <div>
                       <img
@@ -132,19 +132,19 @@ export const FullWidthSecondaryColumnRight = () => {
               </div>
             </div>
           </Transition.Child>
-          <div className="flex-shrink-0 w-14" aria-hidden="true">
+          <div className="shrink-0 w-14" aria-hidden="true">
             {/* Force sidebar to shrink to fit close icon */}
           </div>
         </Dialog>
       </Transition.Root>
 
       {/* Static sidebar for desktop */}
-      <div className="hidden lg:flex lg:flex-shrink-0">
+      <div className="hidden lg:flex lg:shrink-0">
         <div className="flex flex-col w-64">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-gray-100">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-              <div className="flex items-center flex-shrink-0 px-4">
+              <div className="flex items-center shrink-0 px-4">
                 <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-900-text.svg"
@@ -179,8 +179,8 @@ export const FullWidthSecondaryColumnRight = () => {
                 </div>
               </nav>
             </div>
-            <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-              <a href="#" className="flex-shrink-0 w-full group block">
+            <div className="shrink-0 flex border-t border-gray-200 p-4">
+              <a href="#" className="shrink-0 w-full group block">
                 <div className="flex items-center">
                   <div>
                     <img
@@ -233,7 +233,7 @@ export const FullWidthSecondaryColumnRight = () => {
             </div>
             {/* End main area */}
           </main>
-          <aside className="hidden relative xl:flex xl:flex-col flex-shrink-0 w-96 border-l border-gray-200">
+          <aside className="hidden relative xl:flex xl:flex-col shrink-0 w-96 border-l border-gray-200">
             {/* Start secondary column (hidden on smaller screens) */}
             <div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
               <div className="h-full border-2 border-red-200 border-dashed rounded-lg" />

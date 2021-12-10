@@ -94,7 +94,7 @@ const SlideOverStickyFooter: React.FC<SlideOverStickyFooterProps> = ({
     <div
       className={classNames(
         ...(border ? ['border-t border-gray-200'] : []),
-        'flex-shrink-0 px-4 py-4 flex justify-end',
+        'shrink-0 px-4 py-4 flex justify-end',
       )}
     >
       {children ?? (
@@ -190,10 +190,10 @@ const SlideOverComponent: React.FC<SlideOverProps> = ({
           <div className="fixed inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16">
             <Transition.Child
               as={Fragment}
-              enter="transform transition ease-in-out duration-500 sm:duration-700"
+              enter="transition ease-in-out duration-500 sm:duration-700"
               enterFrom="translate-x-full"
               enterTo="translate-x-0"
-              leave="transform transition ease-in-out duration-500 sm:duration-700"
+              leave="transition ease-in-out duration-500 sm:duration-700"
               leaveFrom="translate-x-0"
               leaveTo="translate-x-full"
             >

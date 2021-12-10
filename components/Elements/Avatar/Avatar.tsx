@@ -66,8 +66,8 @@ const AvatarComponent: React.FC<AvatarProps> = ({
   onMouseEnter = () => {},
   onMouseLeave = () => {},
 }) => {
-  let topTransform = 'transform -translate-y-1/2 translate-x-1/2'
-  let bottomTransform = 'transform translate-y-1/2 translate-x-1/2'
+  let topTransform = '-translate-y-1/2 translate-x-1/2'
+  let bottomTransform = 'translate-y-1/2 translate-x-1/2'
 
   return (
     <span

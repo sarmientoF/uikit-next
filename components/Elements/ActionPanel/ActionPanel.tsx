@@ -58,7 +58,7 @@ let SamplePanel3 = () => (
           voluptatibus corrupti atque repudiandae nam.
         </p>
       </div>
-      <div className="mt-5 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
+      <div className="mt-5 sm:mt-0 sm:ml-6 sm:shrink-0 sm:flex sm:items-center">
         <button
           type="button"
           className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 sm:text-sm"
@@ -110,7 +110,7 @@ let SamplePanel5 = () => (
         <h4 className="sr-only">Visa</h4>
         <div className="sm:flex sm:items-start">
           <svg
-            className="h-8 w-auto sm:flex-shrink-0 sm:h-6"
+            className="h-8 w-auto sm:shrink-0 sm:h-6"
             viewBox="0 0 36 24"
             aria-hidden="true"
           >
@@ -133,7 +133,7 @@ let SamplePanel5 = () => (
             </div>
           </div>
         </div>
-        <div className="mt-4 sm:mt-0 sm:ml-6 sm:flex-shrink-0">
+        <div className="mt-4 sm:mt-0 sm:ml-6 sm:shrink-0">
           <button
             type="button"
             className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 sm:text-sm"

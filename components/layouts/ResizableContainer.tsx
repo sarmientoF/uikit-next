@@ -37,7 +37,7 @@ export const ResizableContainer = ({ minWidth = 100, children }) => {
   return (
     <div
       ref={containerRef}
-      className="flex flex-grow-0 flex-shrink-0 min-x-min max-w-6xl bg-gray-200 border"
+      className="flex grow-0 shrink-0 min-x-min max-w-6xl bg-gray-200 border"
       style={{ width: containerWidth }}
       onMouseDown={(e) => e.preventDefault()}
     >

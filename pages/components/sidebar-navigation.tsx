@@ -103,7 +103,7 @@ const sampleSecondaryNavigation: NavigationItem[] = [
 
 const SampleBottomSlot = () => {
   return (
-    <Anchor to="/" className="flex-shrink-0 w-full group block">
+    <Anchor to="/" className="shrink-0 w-full group block">
       <div className="flex items-center">
         <div>
           <img

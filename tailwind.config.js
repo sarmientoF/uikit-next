@@ -5,13 +5,11 @@ let colors = require('tailwindcss/colors')
 delete colors.lightBlue
 
 module.exports = {
-  jit: true,
-  purge: [
+  content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       animation: {
@@ -37,18 +35,12 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        ...colors,
-        primary: colors.green,
-        secondary: colors.lightBlue,
+        primary: colors.yellow,
+        secondary: colors.orange,
       },
       minHeight: {
         '1/4': '25%',
       },
-    },
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['active'],
     },
   },
   plugins: [

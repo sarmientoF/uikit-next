@@ -14,7 +14,9 @@ enum AnimatedBlobBackgroundType {
   extraLarge,
 }
 
-const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = ({
+const AnimatedBlobBackgroundComponent: React.FC<
+  AnimatedBlobBackgroundProps
+> = ({
   type = AnimatedBlobBackgroundType.small,
   colors = ['bg-purple-300', 'bg-yellow-300', 'bg-pink-300', 'bg-skyBlue-300'],
   content,
@@ -65,7 +67,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[0 % colors.length],
           'absolute top-0 -left-8',
           'w-80 h-80 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-70',
+          'mix-blend-multiply blur-2xl opacity-70',
           'animate-blob ease-in-out',
         )}
       />
@@ -74,7 +76,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[1 % colors.length],
           'absolute bottom-0 -right-8',
           'w-80 h-80 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-70',
+          'mix-blend-multiply blur-2xl opacity-70',
           'animate-blob ease-in-out',
           'animation-delay-4000',
         )}
@@ -89,7 +91,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[0 % colors.length],
           'absolute top-0 -left-2',
           'w-96 h-96 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-70',
+          'mix-blend-multiply blur-2xl opacity-70',
           'animate-blob ease-in-out',
         )}
       />
@@ -98,7 +100,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[1 % colors.length],
           'absolute bottom-0 -right-2',
           'w-96 h-96 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-70',
+          'mix-blend-multiply blur-2xl opacity-70',
           'animate-blob ease-in-out',
           'animation-delay-4000',
         )}
@@ -113,7 +115,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[0 % colors.length],
           'absolute -top-4 -left-4',
           'w-80 h-80 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-80',
+          'mix-blend-multiply blur-2xl opacity-80',
           'animate-blob ease-in-out',
         )}
       />
@@ -122,7 +124,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[1 % colors.length],
           'absolute top-10 right-0 left-0 mx-auto',
           'w-64 h-64 rounded-full',
-          'mix-blend-multiply filter blur-3xl opacity-70',
+          'mix-blend-multiply blur-3xl opacity-70',
           'animate-blob ease-in-out',
           'animation-delay-2000',
         )}
@@ -132,7 +134,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[2 % colors.length],
           'absolute -bottom-4 -right-4',
           'w-72 h-72 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-60',
+          'mix-blend-multiply blur-2xl opacity-60',
           'animate-blob ease-in-out',
           'animation-delay-4000',
         )}
@@ -146,7 +148,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[0 % colors.length],
           'absolute -top-4 left-8',
           'w-96 h-96 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-80',
+          'mix-blend-multiply blur-2xl opacity-80',
           'animate-blob ease-in-out',
         )}
       />
@@ -155,7 +157,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[1 % colors.length],
           'absolute -top-4 right-8',
           'w-72 h-72 rounded-full',
-          'mix-blend-multiply filter blur-3xl opacity-60',
+          'mix-blend-multiply blur-3xl opacity-60',
           'animate-blob ease-in-out',
           'animation-delay-2000',
         )}
@@ -165,7 +167,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[3 % colors.length],
           'absolute -bottom-8 right-12',
           'w-80 h-80 rounded-full',
-          'mix-blend-multiply filter blur-2xl opacity-70',
+          'mix-blend-multiply blur-2xl opacity-70',
           'animate-blob ease-in-out',
           'animation-delay-6000',
         )}
@@ -175,7 +177,7 @@ const AnimatedBlobBackgroundComponent: React.FC<AnimatedBlobBackgroundProps> = (
           colors[2 % colors.length],
           'absolute -bottom-4 left-0',
           'w-72 h-72 rounded-full',
-          'mix-blend-multiply filter blur-3xl opacity-70',
+          'mix-blend-multiply blur-3xl opacity-70',
           'animate-blob ease-in-out',
           'animation-delay-4000',
         )}

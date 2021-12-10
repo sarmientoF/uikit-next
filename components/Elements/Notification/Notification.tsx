@@ -82,7 +82,7 @@ const NotificationComponent: React.FC<NotificationProps> = ({
           <Transition
             show={show}
             as={Fragment}
-            enter="transform ease-out duration-300 transition"
+            enter="ease-out duration-300 transition"
             enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
             enterTo="translate-y-0 opacity-100 sm:translate-x-0"
             leave="transition ease-in duration-100"
@@ -92,7 +92,7 @@ const NotificationComponent: React.FC<NotificationProps> = ({
             <div className="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="p-4">
                 <div className={classNames('flex', alignment)}>
-                  <div className="flex-shrink-0">{icon ?? avatar}</div>
+                  <div className="shrink-0">{icon ?? avatar}</div>
                   {children ? (
                     <div className="ml-3 w-0 flex-1 pt-0.5">{children}</div>
                   ) : (
@@ -117,7 +117,7 @@ const NotificationComponent: React.FC<NotificationProps> = ({
                     </div>
                   )}
                   {/* close button */}
-                  <div className="ml-4 flex-shrink-0 flex">
+                  <div className="ml-4 shrink-0 flex">
                     <div>
                       <button
                         className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"

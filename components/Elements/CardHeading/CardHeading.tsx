@@ -25,7 +25,7 @@ export const CardHeadingComponent: React.FC<CardHeadingProps> = ({
             title
           )}
         </div>
-        <div className="ml-4 mt-4 flex-shrink-0 flex">{actions}</div>
+        <div className="ml-4 mt-4 shrink-0 flex">{actions}</div>
       </div>
     </div>
   )

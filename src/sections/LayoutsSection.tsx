@@ -76,7 +76,7 @@ export const LayoutsSection = () => {
             <div
               className={classNames(
                 layout.bgColor,
-                'py-4 flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
+                'py-4 shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
               )}
             >
               {layout.initials}

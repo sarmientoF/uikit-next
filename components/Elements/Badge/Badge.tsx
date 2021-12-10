@@ -74,7 +74,7 @@ const BadgeRemoveButtonComponent: React.FC<BadgeRemoveButtonProps> = ({
     type="button"
     className={classNames(
       color,
-      'flex-shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center focus:outline-none focus:text-white',
+      'shrink-0 ml-0.5 h-4 w-4 rounded-full inline-flex items-center justify-center focus:outline-none focus:text-white',
     )}
     onClick={(e) => {
       e.preventDefault()

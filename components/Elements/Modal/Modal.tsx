@@ -420,7 +420,7 @@ const ModalCard: React.FC<ModalCardProps> = ({
   cta = null,
 }) => {
   return (
-    <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+    <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
       <div>
         {icon}
         <div className="mt-3 text-center sm:mt-5">
@@ -487,7 +487,7 @@ const ModalComponent: React.FC<ModalProps> = ({ show, setShow, children }) => {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="inline-block align-bottom overflow-hidden transform transition-all sm:align-middle sm:max-w-sm sm:w-full">
+            <div className="inline-block align-bottom overflow-hidden transition-all sm:align-middle sm:max-w-sm sm:w-full">
               {children ?? <ModalCard setShow={setShow} />}
             </div>
           </Transition.Child>

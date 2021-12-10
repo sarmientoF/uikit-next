@@ -43,7 +43,7 @@ const NavBarComponent: React.FC<NavBarProps> = ({
                   )}
                 </div>
 
-                <div className="flex-shrink-0 flex items-center">{icon}</div>
+                <div className="shrink-0 flex items-center">{icon}</div>
 
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-primary-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
@@ -52,8 +52,8 @@ const NavBarComponent: React.FC<NavBarProps> = ({
               </div>
 
               <div className="flex items-center">
-                <div className="flex-shrink-0">{quickAction}</div>
-                <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
+                <div className="shrink-0">{quickAction}</div>
+                <div className="hidden md:ml-4 md:shrink-0 md:flex md:items-center">
                   {actions}
                 </div>
                 <div className="flex items-center md:hidden">
