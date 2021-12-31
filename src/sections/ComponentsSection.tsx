@@ -7,8 +7,20 @@ import AnimatedBlogBackgroundImg from '../../src/assets/animated-blob-background
 import AvatarImg from '../../src/assets/avatars.png'
 import BadgeImg from '../../src/assets/badges.png'
 import BreadcrumbImg from '../../src/assets/breadcrumbs.png'
-import ButtonGroupImg from '../../src/assets/button-groups.png'
 import ButtonImg from '../../src/assets/buttons.png'
+import ButtonGroupImg from '../../src/assets/button-groups.png'
+import CardHeadingImg from '../../src/assets/card-headings.png'
+import CheckboxImg from '../../src/assets/checkboxes.png'
+import CodeImg from '../../src/assets/code.png'
+import DropdownImg from '../../src/assets/dropdowns.png'
+import EmptyStateImg from '../../src/assets/empty-states.png'
+import FilePreviewImg from '../../src/assets/file-previews.png'
+import InputImg from '../../src/assets/inputs.png'
+import ModalImg from '../../src/assets/modals.png'
+import NavBarImg from '../../src/assets/nav-bars.png'
+import NavigationImg from '../../src/assets/navigation.png'
+import NotificationImg from '../../src/assets/notifications.png'
+import PageHeaderImg from '../../src/assets/page-headers.png'
 
 let colors = [
   'bg-rose-600',
@@ -83,61 +95,73 @@ const components = [
     name: 'CardHeading',
     initials: 'CH',
     to: '/components/card-heading',
+    asset: CardHeadingImg,
   },
   {
     name: 'CheckboxGroup',
     initials: 'CG',
     to: '/components/checkbox-group',
+    asset: CheckboxImg,
   },
   {
     name: 'Code',
     initials: 'C',
     to: '/components/code',
+    asset: CodeImg,
   },
   {
     name: 'Dropdown',
     initials: 'D',
     to: '/components/dropdown',
+    asset: DropdownImg,
   },
   {
     name: 'EmptyState',
     initials: 'ES',
     to: '/components/empty-state',
+    asset: EmptyStateImg,
   },
   {
     name: 'FilePreview',
     initials: 'FP',
     to: '/components/file-preview',
+    asset: FilePreviewImg,
   },
   {
     name: 'Input',
     initials: 'I',
     to: '/components/input',
+    asset: InputImg,
   },
   {
     name: 'Modal',
     initials: 'M',
     to: '/components/modal',
+    asset: ModalImg,
   },
   {
     name: 'NavBar',
     initials: 'NB',
     to: '/components/navbar',
+    asset: NavBarImg,
   },
   {
     name: 'Navigation',
     initials: 'N',
     to: '/components/navigation',
+    asset: NavigationImg,
   },
   {
     name: 'Notification',
     initials: 'N',
     to: '/components/notification',
+    asset: NotificationImg,
   },
   {
     name: 'PageHeading',
     initials: 'PH',
     to: '/components/page-heading',
+    asset: PageHeaderImg,
   },
   {
     name: 'Pagination',
@@ -201,7 +225,7 @@ export const ComponentsSection = () => {
           >
             {component.asset && (
               <Image
-                className="object-cover"
+                className="object-cover rounded-t-md"
                 src={component.asset}
                 alt={component.name}
               />
