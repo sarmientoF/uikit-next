@@ -19,8 +19,6 @@ For full documentation, visit [uikit.sergeimeza.com](https://uikit.sergeimeza.co
 | [`@sergeimeza/uikit-next`](https://github.com/SergeiMeza/uikit-next)             | [![npm version](https://img.shields.io/npm/v/@sergeimeza/uikit-next.svg)](https://www.npmjs.com/package/@sergeimeza/uikit-next)             | [![npm downloads](https://img.shields.io/npm/dt/@sergeimeza/uikit-next.svg)](https://www.npmjs.com/package/@sergeimeza/uikit-next)             |
 | [`@sergeimeza/foundation-react`](https://github.com/SergeiMeza/foundation-react) | [![npm version](https://img.shields.io/npm/v/@sergeimeza/foundation-react.svg)](https://www.npmjs.com/package/@sergeimeza/foundation-react) | [![npm downloads](https://img.shields.io/npm/dt/@sergeimeza/foundation-react.svg)](https://www.npmjs.com/package/@sergeimeza/foundation-react) |
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Community
 
 ## Support:
