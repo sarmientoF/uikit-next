@@ -1,0 +1,35 @@
+steps:
+  - name: 'gcr.io/kaniko-project/executor:debug-edge'
+    args:
+      - --dockerfile=Dockerfile
+      - --destination=gcr.io/lollipop-prod/uikit-next:$COMMIT_SHA
+      - --destination=gcr.io/lollipop-prod/uikit-next:latest
+      - --cache=true
+      - --cache-ttl=720h
+    id: build and push
+  - name: gcr.io/lollipop-prod/helm
+    args:
+      - upgrade
+      - "uikit-next"
+      - ./helm/uikit-next
+      - '--install'
+      - '--namespace'
+      - 'portfolio'
+      - '--values'
+      - './helm/uikit-next/values.yaml'
+      - '--set'
+      - 'image.tag=$COMMIT_SHA'
+      - '--set'
+      - 'env.NODE_ENV=$_NODE_ENV'
+    env:
+      - CLOUDSDK_COMPUTE_ZONE=$_CLOUDSDK_COMPUTE_ZONE
+      - CLOUDSDK_CONTAINER_CLUSTER=$_CLOUDSDK_CONTAINER_CLUSTER
+    id: Deploy
+options:
+  substitutionOption: ALLOW_LOOSE
+  # https://cloud.google.com/build/docs/api/reference/rest/v1/projects.builds?authuser=2#machinetype
+  machineType: N1_HIGHCPU_32
+tags:
+  - gcp-cloud-build-deploy
+  - uikit-next
+timeout: 3600s
