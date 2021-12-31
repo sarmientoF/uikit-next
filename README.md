@@ -21,6 +21,10 @@ For full documentation, visit [uikit.sergeimeza.com](https://uikit.sergeimeza.co
 
 ## Community
 
+For help, discussion about best practices, or any other conversation that would benefit from being searchable:
+
+[Discuss UIKit-Next on GitHub](https://github.com/SergeiMeza/uikit-next/discussions)
+
 ## Support:
 
 <p><a href="https://www.buymeacoffee.com/sergeimeza"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="sergeimeza" /></a></p><br><br>
