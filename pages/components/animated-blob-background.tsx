@@ -1,5 +1,8 @@
+import Image from 'next/image'
 import { AnimatedBlobBackground, Code } from '../../components'
 import { ComponentWrapper } from '../../src/layouts/ComponentWrapper'
+
+import QoalsImg from '../../src/assets/quoals.png'
 
 const AnimatedBlobBackgroundPreview = () => {
   let previewCode1 = `import { AnimatedBlobBackground } from "@sergeimeza/uikit-react"
@@ -85,10 +88,7 @@ enum AnimatedBlobBackgroundType {
           ]}
         >
           <div className="flex items-center justify-center">
-            <img
-              src="https://qoals.com/assets/images/hero.svg"
-              alt="dashboard"
-            />
+            <Image src={QoalsImg} alt="quoals" />
           </div>
         </AnimatedBlobBackground>
 
