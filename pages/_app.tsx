@@ -13,9 +13,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <div className='bg-gray-100 min-h-screen'>
-    <Component {...pageProps} />
-  </div>
+  return (
+    <div className="bg-gray-200 min-h-screen">
+      <Component {...pageProps} />
+    </div>
+  )
 }
 
 export default MyApp

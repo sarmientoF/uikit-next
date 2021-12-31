@@ -1,4 +1,14 @@
+import Image from 'next/image'
 import { Anchor, CardHeading, classNames } from '../../components'
+
+import ActionPanelImg from '../../src/assets/action-panels.png'
+import AnchorImg from '../../src/assets/anchors.png'
+import AnimatedBlogBackgroundImg from '../../src/assets/animated-blob-background.png'
+import AvatarImg from '../../src/assets/avatars.png'
+import BadgeImg from '../../src/assets/badges.png'
+import BreadcrumbImg from '../../src/assets/breadcrumbs.png'
+import ButtonGroupImg from '../../src/assets/button-groups.png'
+import ButtonImg from '../../src/assets/buttons.png'
 
 let colors = [
   'bg-rose-600',
@@ -25,42 +35,49 @@ const components = [
     name: 'Action Panel',
     initials: 'AP',
     to: '/components/action-panel',
+    asset: ActionPanelImg,
   },
   {
     name: 'Anchor',
     initials: 'A',
     to: '/components/anchor',
+    asset: AnchorImg,
   },
   {
     name: 'AnimatedBlobBackground',
     initials: 'ABB',
     to: '/components/animated-blob-background',
+    asset: AnimatedBlogBackgroundImg,
   },
   {
     name: 'Avatar',
     initials: 'A',
     to: '/components/avatar',
+    asset: AvatarImg,
   },
   {
     name: 'Badge',
     initials: 'B',
     to: '/components/badge',
-    members: 16,
+    asset: BadgeImg,
   },
   {
     name: 'Breadcrumb',
     initials: 'B',
     to: '/components/breadcrumb',
+    asset: BreadcrumbImg,
   },
   {
     name: 'Button',
     initials: 'B',
     to: '/components/button',
+    asset: ButtonImg,
   },
   {
     name: 'ButtonGroup',
     initials: 'BG',
     to: '/components/button-group',
+    asset: ButtonGroupImg,
   },
   {
     name: 'CardHeading',
@@ -180,24 +197,34 @@ export const ComponentsSection = () => {
         {components.map((component) => (
           <li
             key={component.name}
-            className="col-span-1 flex shadow-sm rounded-md"
+            className="col-span-1 flex flex-col border border-gray-200 shadow-md rounded-md"
           >
-            <div
-              className={classNames(
-                component.bgColor,
-                'py-4 shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md',
-              )}
-            >
-              {component.initials}
-            </div>
-            <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
-              <div className="flex-1 px-4 py-2 text-sm truncate">
-                <Anchor
-                  to={component.to}
-                  className="text-gray-900 font-medium hover:text-gray-600"
-                >
-                  {component.name}
-                </Anchor>
+            {component.asset && (
+              <Image
+                className="object-cover"
+                src={component.asset}
+                alt={component.name}
+              />
+            )}
+
+            <div className="flex">
+              <div
+                className={classNames(
+                  component.bgColor,
+                  'py-4 shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-bl-md',
+                )}
+              >
+                {component.initials}
+              </div>
+              <div className="flex-1 flex items-center justify-between bg-white rounded-br-md truncate">
+                <div className="flex-1 px-4 text-sm truncate">
+                  <Anchor
+                    to={component.to}
+                    className="text-gray-900 font-medium hover:text-gray-600"
+                  >
+                    {component.name}
+                  </Anchor>
+                </div>
               </div>
             </div>
           </li>
