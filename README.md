@@ -1,10 +1,32 @@
-<h3 align="center">
+<h1 align="center">
   UIKit Next
-</h3>
+</h1>
 
 <p align="center">
   Versatil and beautiful UI toolkit library designed to integrate with Next.js and Tailwind CSS.
 </p>
+
+<div align="center">
+
+ [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url] [![Total alerts][lgtm-image]][lgtm-url]
+
+  [![Follow Twitter][twitter-image]][twitter-url] [![Discussions][discussions-image]][discussions-url] [![][issues-helper-image]][issues-helper-url] [![Issues need help][help-wanted-image]][help-wanted-url]
+
+[npm-image]: http://img.shields.io/npm/v/@sergeimeza/uikit-next.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/@sergeimeza/uikit-next
+[download-image]: https://img.shields.io/npm/dm/@sergeimeza/uikit-next.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@sergeimeza/uikit-next
+[lgtm-image]: https://flat.badgen.net/lgtm/alerts/g/SergeiMeza/uikit-next
+[lgtm-url]: https://lgtm.com/projects/g/SergeiMeza/uikit-next/alerts/
+[help-wanted-image]: https://flat.badgen.net/github/label-issues/sergeimeza/uikit-next/help%20wanted/open
+[help-wanted-url]: https://github.com/sergeimeza/uikit-next/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22
+[twitter-image]: https://img.shields.io/twitter/follow/Sergi_Meza.svg?label=SergeiMeza&style=social
+[twitter-url]: https://twitter.com/Sergi_Meza
+[discussions-image]: https://img.shields.io/badge/discussions-on%20github-blue?style=flat-square
+[discussions-url]: https://github.com/sergeimeza/uikit-next/discussions
+[issues-helper-image]: https://img.shields.io/badge/using-issues--helper-orange?style=flat-square
+[issues-helper-url]: https://github.com/actions-cool/issues-helper
+</div>
 
 ---
 
