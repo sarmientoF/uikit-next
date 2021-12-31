@@ -30,6 +30,8 @@
 
 ---
 
+![uikit-next](https://user-images.githubusercontent.com/15046717/147818220-52947eab-2cc3-43aa-9fa9-7ffa3e6d071c.png)
+
 ## Documentation
 
 For full documentation, visit [uikit.sergeimeza.com](https://uikit.sergeimeza.com).
