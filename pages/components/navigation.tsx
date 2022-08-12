@@ -18,23 +18,39 @@ import { NavigationItem } from '../../components/Elements/Navigation/NavigationI
 import { ComponentWrapper } from '../../src/layouts/ComponentWrapper'
 
 const sampleNavigation: NavigationItem[] = [
-  { name: 'Dashboard', to: '/', icon: HomeIcon, current: true, count: '5' },
+  {
+    name: 'Dashboard',
+    to: '/components/navigation',
+    icon: HomeIcon,
+    current: false,
+    count: '5',
+  },
   {
     name: 'Projects',
-    to: '/',
+    to: '/components/navigation#1',
     icon: FolderIcon,
     current: false,
     count: '19',
   },
   {
     name: 'Calendar',
-    to: '/',
+    to: '/components/navigation#2',
     icon: CalendarIcon,
     current: false,
     count: '20+',
   },
-  { name: 'Documents', to: '/', icon: InboxIcon, current: false },
-  { name: 'Reports', to: '/', icon: ChartBarIcon, current: false },
+  {
+    name: 'Documents',
+    to: '/components/navigation#3',
+    icon: InboxIcon,
+    current: false,
+  },
+  {
+    name: 'Reports',
+    to: '/components/navigation#4',
+    icon: ChartBarIcon,
+    current: false,
+  },
 ]
 
 const sampleNavigation2: NavigationItem[] = [

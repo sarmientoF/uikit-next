@@ -23,6 +23,9 @@ const VerticalNavigationComponent: React.FC<VerticalNavigationProps> = ({
   onItemSelected = (item) => console.log('item selected:', item.name),
 }) => {
   const router = useRouter()
+  const { pathname } = router
+
+  // memo or state
 
   const [navItems, setNavItems] = useState<any[]>(items.slice())
 
