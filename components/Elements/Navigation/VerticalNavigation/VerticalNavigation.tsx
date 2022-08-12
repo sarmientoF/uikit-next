@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 import { NavigationItem } from '../NavigationItem'
 import { classNames } from '../../../helpers/methods'
@@ -23,20 +23,22 @@ const VerticalNavigationComponent: React.FC<VerticalNavigationProps> = ({
   onItemSelected = (item) => console.log('item selected:', item.name),
 }) => {
   const router = useRouter()
-  const { pathname } = router
+  const { pathname, asPath } = router
 
   // memo or state
 
   const [navItems, setNavItems] = useState<any[]>(items.slice())
 
-  function handleItemChange(value: string) {
+  useMemo(() => {
     let _navItems = navItems.slice()
     _navItems = _navItems.map((e) => ({ ...e, current: false }))
-    let index = _navItems.findIndex((i) => i.name === value)
+    let index = _navItems.findIndex((i) => i.to === asPath)
+
+    if (index === -1) return
     _navItems[index].current = true
     setNavItems(_navItems)
     onItemSelected(_navItems[index])
-  }
+  }, [asPath])
 
   return (
     <nav aria-label="Sidebar">
